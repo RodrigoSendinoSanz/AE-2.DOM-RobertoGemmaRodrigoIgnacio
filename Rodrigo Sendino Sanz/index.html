@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormularioDOMJs RodrigoSendinoSanz</title>
+    <script type="application/javascript">
+        function pruebasDOM() {
+            let container = document.getElementById("container")
+            container.innerHTML = 
+            "<form>" +
+                "<h1>Formulario</h1>"+
+                    "<input type ='text'id='DNI' placeholder='DNI' > </input>"+
+                    "<input type='text' id='nombre' placeholder='Nombre' > </input>"+
+                    "<input type='text' id='apellidos' placeholder='Apellidos' ></input>"+
+                    "<input type='text' id='direccion' placeholder='Direccion'></input >"+
+                    "<label for='opcion1' ><input type='radio' name=´grupo1´>Opcion1 G1</label>"+
+                    "<label for='opcion2' ><input type='radio'name=´grupo1´>Opcion2 G1</label>"+
+                    "<label for='opcion3' ><input type='radio'name=´grupo1´>Opcion3 G1</label>"+
+                    "<label for='opcion4' ><input type='radio'name=´grupo1´>Opcion4 G1</label><br><br>"+
+                    "<label for='opcion1' ><input type='radio'name=´grupo2´>Opcion1 G2</label>"+
+                    "<label for='opcion2' ><input type='radio'name=´grupo2´>Opcion2 G2</label>"+
+                    "<label for='opcion3' ><input type='radio' name=´grupo2´>Opcion3 G2</label>"+
+                    "<label for='opcion4' ><input type='radio' name=´grupo2´>Opcion4 G2</label>"+
+                    "<br><br>"+
+                    "<label> <input type='checkbox' id='cbox1' > 1 Checkbox </label><br>"+
+                    "<label><input type='checkbox' id='cbox2'> 2 Checkbox</label>"+
+                    "<br> <label> <input type='checkbox' id ='cbox3'> 3 Checkbox </label>"+
+                    "<br><label><input type='checkbox' id='cbox4'> 4 Checkbox</label> <br> "+
+                    "<label><input type='checkbox' id='cbox5' > 5 Checkbox </label><br><br> "+
+                    "<img src='http://www.acn.cu/images/2019/OCTUBRE/1015-programaci%C3%B3n.jpg' width='500 ' height='600 '> "+
+                    "<img src='https://empresas.blogthinkbig.com/wp-content/uploads/2019/11/Imagen3-245003649.jpg?w=800' width='500' height='600'><br>"+
+                    "<select name='select'>"+
+                            "<option value='value1'>Value 1</option>"+
+                            "<option value='value2' selected>Value 2</option>"+
+                            "<option value='value3'>Value 3</option>"+
+                    "</select>"+
+                    "<textarea name='textarea' rows='10' cols='50'>Escribir algo aqui</textarea>   <input type='submit' value='Enviar'>"+ 
+            "</form>";
+        }
+    </script>
+    <style>
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body onload="pruebasDOM()">
+    <div id="container"> </div>
+</body>
+</html>
