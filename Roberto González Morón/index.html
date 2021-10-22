@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AE-2. DOM Roberto Gonzalez Moron</title>
+</head>
+
+<body>
+    <h1>GENERADOR DE FORMULARIO</h1>
+    <br />
+    <br />
+    <button type="button" onclick="mostrarDatosPersonales()">Mostrar Datos Personales</button>
+    <button type="button" onclick="mostrarBotonesRadio()">Mostrar Botones Radio</button>
+    <button type="button" onclick="mostrarCheckbox()">Mostrar Checkbox</button>
+    <button type="button" onclick="mostrarImagenes()">Mostrar Imagenes</button>
+    <button type="button" onclick="mostrarCampoSelect()">Mostrar Campo Select</button>
+    <button type="button" onclick="mostrarTextArea()">Mostrar Area de Texto</button>
+    <button type="button" onclick="mostrarDatosPersonales(); mostrarBotonesRadio(); mostrarCheckbox();
+                                   mostrarImagenes(); mostrarCampoSelect(); mostrarTextArea()">Mostrar Formulario Completo</button>
+
+    
+    
+                                    
+
+    <button type="button" onclick="borrarDatos()">Borrar Datos</button>
+
+
+
+    <script type="application/javascript">
+            function mostrarDatosPersonales() {
+                let container = document.getElementById("span1")
+                span1.innerHTML =
+        "<form>" +
+                    "<h1>Datos personales</h1>"+
+                        "<input type='text' id='dni' placeholder='DNI'>"+
+                        "<input type='text' id='nombre' placeholder='Nombre'>"+
+                        "<input type='text' id='apellidos' placeholder='Apellidos'>"+
+                        "<input type='text' id='direccion' placeholder='Direccion'>"+
+                        "<input type='text' id='telefono' placeholder='telefono'>"+
+        "</form>";
+            }</script>
+
+    <script type="application/javascript">
+            function mostrarBotonesRadio() {
+                let container = document.getElementById("span2")
+                span2.innerHTML =
+        "<form>" +
+                    "<h1>Botones Radio</h1>"+
+                        "<h2>Conjunto 1</h2>"+
+                        "<label for='opcion1'><input type='radio' name='conjunto1' value='Opcion1'>Opcion1 </label>"+
+                        "<label for='opcion2'><input type='radio' name='conjunto1' value='Opcion2'>Opcion2 </label>"+
+                        "<label for='opcion3'><input type='radio' name='conjunto1' value='Opcion3'>Opcion3 </label>"+
+                        "<label for='opcion4'><input type='radio' name='conjunto1' value='Opcion4'>Opcion4 </label>"+
+                    "<h2>Conjunto 2</h2>"+
+                        "<label for='opcion1'><input type='radio' name='conjunto2' value='Opcion1'>Opcion1 </label>"+
+                        "<label for='opcion2'><input type='radio' name='conjunto2' value='Opcion2'>Opcion2 </label>"+
+                        "<label for='opcion3'><input type='radio' name='conjunto2' value='Opcion3'>Opcion3 </label>"+
+                        "<label for='opcion4'><input type='radio' name='conjunto2' value='Opcion4'>Opcion4 </label>"+
+        "</form>";
+            }</script>
+
+    <script type="application/javascript">
+            function mostrarCheckbox() {
+                let container = document.getElementById("span3")
+                span3.innerHTML =
+        "<form>" +
+                    "<h1>Checkbox</h1>"+
+                        "<label> <input type='checkbox' id='cbox1' name='checkboxopciones1' value='Checkbox 1'>Checkbox 1</label>"+
+                        "<label> <input type='checkbox' id='cbox2' name='checkboxopciones2' value='Checkbox 2'>Checkbox 2</label>"+
+                        "<label> <input type='checkbox' id='cbox3' name='checkboxopciones3' value='Checkbox 3'>Checkbox 3</label>"+
+                        "<label> <input type='checkbox' id='cbox4' name='checkboxopciones4' value='Checkbox 4'>Checkbox 4</label>"+
+                        "<label> <input type='checkbox' id='cbox5' name='checkboxopciones5' value='Checkbox 5'>Checkbox 5</label>"+
+        "</form>";
+            }</script>
+
+    <script type="application/javascript">
+            function mostrarImagenes() {
+                let container = document.getElementById("span4")
+                span4.innerHTML =
+        "<form>" +
+                  "<h1>Imagenes</h1>"+
+                     "<img name='imagen1' src='imagenes/thumbs-up.png'>"+
+                     "<img name='imagen2' src='imagenes/thumbs-down.png'>"+
+        "</form>";
+            }</script>
+
+    <script type="application/javascript">
+             function mostrarCampoSelect() {
+                 let container = document.getElementById("span5")
+                 span5.innerHTML =
+        "<form>"+
+            "<h1>Campo Select</h1>"+
+                 "<select name='select'>"+
+                            "<option value='value1'>Value 1</option>"+
+                            "<option value='value2' selected>Value 2</option>"+
+                            "<option value='value3'>Value 3</option>"+
+                    "</select>"+
+        "</form>";
+            }</script>
+
+    <script type="application/javascript">
+             function mostrarTextArea() {
+                 let container = document.getElementById("span6")
+                 span6.innerHTML =
+        "<form>"+
+            "<h1>Area de Texto</h1>"+
+               "<textarea name='textarea' rows='10' cols='50'>Escribir algo aqui</textarea>   <input type='submit' value='Enviar'>"+
+        "</form>";
+            }</script>
+
+
+    <script type="application/javascript">
+                function borrarDatos() {
+
+                    container.innerHTML =
+        "<span id='span1'> </span>"+
+        "<span id='span2'> </span>"+
+        "<span id='span3'> </span>"+
+        "<span id='span4'> </span>"+
+        "<span id='span5'> </span>"+
+        "<span id='span6'> </span>";
+
+
+
+
+                }</script>
+
+
+    <div id="container">
+        <span id="span1"> </span>
+        <span id="span2"> </span>
+        <span id="span3"> </span>
+        <span id="span4"> </span>
+        <span id="span5"> </span>
+        <span id="span6"> </span>
+
+    </div>
+
+
+</body>
+
+
+
+</html>
+
