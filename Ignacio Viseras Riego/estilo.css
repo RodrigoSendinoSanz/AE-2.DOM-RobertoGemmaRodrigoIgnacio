@@ -1,0 +1,32 @@
+#foto1{
+    height: 16%;
+    width: 16%;
+    padding-left: 2%;
+    padding-right: 3%;
+}
+#foto2{
+    height: 15%;
+    width: 15%;
+}
+
+.Encabezado{
+    padding-left: 9%;
+}
+textarea{
+    margin-top: 1%;
+    margin-left: 9%;
+}
+
+#enviar{
+    height: 10%;
+    width: 5%;
+    position: relative;
+    left: 1%;
+    bottom: 80px;
+}
+
+#generador{
+    position: relative;
+    left: 46.46%;
+    top: 460px;
+}
