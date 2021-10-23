@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Act2DOM Gemma Moreno Gamo</title>
+    <script type="application/javascript">
+
+function cargar(){
+
+let formulario = document.getElementById("formulario")
+
+formulario.innerHTML=
+
+        "<h1>Formulario</h1>"+
+        "<form name='formulario' id='formulario' action='urlServer' method='get'>" + 
+        
+        "<h3>Datos personales:</h3>"+
+        "<ul>"+
+        "<li><label for='opcion1'>DNI <input type='text' id='dni' placeholder='12345678-X'></label></li>"+
+        "<li><label for='opcion1'>Nombre <input type='text' id='nombre' placeholder='Nombre'></label></li>"+
+        "<li><label for='opcion1'>Apellidos <input type='text' id='apellidos' placeholder='Apellidos'></label></li>"+
+        "<li><label for='opcion1'>Dirección <input type='text' id='direccion' placeholder='Dirección'></label></li>"+
+        "<li><label for='opcion1'>Teléfono <input type='text' id='telefono' placeholder='Teléfono'></label></li>"+
+        "</ul>"+
+
+        "<h2>Valoración</h2>"+
+        "<img src='imagenes/codigo.jpg' alt='imagen con codigo de colores' title='codigo'>"+
+        "<br>"+
+
+        "<h3>¿Te ha gustado esta imagen?</h3>"+
+        "<input type='radio' id='opcion1' name='radiob1' value='1'><label for='opcion1'>Nada</label>"+
+        "<input type='radio' id='opcion2' name='radiob1' value='2'><label for='opcion2'>Poco</label>"+
+        "<input type='radio' id='opcion3' name='radiob1' value='3'><label for='opcion3'>Regular</label>"+
+        "<input type='radio' id='opcion4' name='radiob1' value='4'><label for='opcion4'>Mucho</label>"+
+        "<br>"+
+
+        "<img src='imagenes/pc.jpg' alt='portatil con colores' title='portatil'>"+
+        "<br>"+
+        "<h3>¿Te ha gustado esta imagen?</h3>"+
+        "<input type='radio' id='opcionA' name='radiob2' value='A'><label for='opcionA'>Nada</label>"+
+        "<input type='radio' id='opcionB' name='radiob2' value='B'><label for='opcionB'>Poco</label>"+
+        "<input type='radio' id='opcionC' name='radiob2' value='C'><label for='opcionC'>Regular</label>"+
+        "<input type='radio' id='opcionD' name='radiob2' value='D'><label for='opcionD'>Mucho</label>"+
+
+        "<h3>¿Qué imagen te ha gustado más?</h3>"+
+        "<select name='select'>"+
+        "<option value='select1'>Imagen 1</option>"+
+        "<option value='select2'>Imagen 2</option>"+
+        "<option value='select3'>Ninguna</option>"+
+        "</select>"+
+
+        "<h3>¿Qué color ha llamado más la atención?</h3>"+
+        "<input type='checkbox' id='checkbox1' name='checkbox1' value='Checkbox 1'><label> Naranja </label>"+
+        "<input type='checkbox' id='checkbox2' name='checkbox2' value='Checkbox 2'><label> Blanco </label>"+
+        "<input type='checkbox' id='checkbox3' name='checkbox3' value='Checkbox 3'><label> Morado </label>"+
+        "<input type='checkbox' id='checkbox4' name='checkbox4' value='Checkbox 4'><label> Azul </label>"+
+        "<input type='checkbox' id='checkbox5' name='checkbox5' value='Checkbox 5'><label> Negro </label>"+
+    
+        "<h3>Observaciones:</h3>"+
+        "<textarea name='Observaciones' rows='10' cols='30'>Dejanos tu opinión</textarea>"+
+        "<br>"+
+        "<input type='submit' value='Enviar'>"+
+
+        "</form>";
+}
+    </script>
+</head>
+
+<body onload="cargar()">    
+
+    <div id="formulario"></div>
+
+</body>
+
+
+</html>
